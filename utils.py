@@ -10,7 +10,6 @@ def load_candidates_from_json(path):
         raw_data = f.read()
         data = json.loads(raw_data)
     return data
-print(load_candidates_from_json('candidates.json'))
 
 
 def get_candidate(candidate_id):
@@ -48,8 +47,6 @@ def get_candidates_by_name(candidate_name):
         else:
             continue
     return(count, idres, nameres)
-
-print(get_candidates_by_name('stein'))
 
 def get_candidates_by_skill(skill_name):
     """
